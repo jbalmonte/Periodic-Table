@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+
+$myFont: 'Times New Roman', sans-serif;
+$myBorder:2px solid #D1C7C7;
+$elementsFont:'Kanit', sans-serif;
+
+$colors:(
+    "bg":black,
+    "periodicTable":#B5CD6D,
+    "fontColor":white,
+    "otherNonmetals":#00CCFF,
+    "alkalai":#0066CC,
+    "alkalineEarth":#CC66CC, 
+    "transitionMetal":#FF4D4D, 
+    "metalloids":#FFB84D,
+    "postTransitionMetals":#FF704D,
+    "undefinedGroup":#96A5A7,
+    "flourineGroup":#70DB70,
+    "nobleGases":#009999,
+    "lanthanoids":#00466B,
+    "actinoids":#742574,
+);
+    
+
+*{
+    margin: 0; padding: 0;
+    background-color: map-get($colors, bg);
+    overflow-x: hidden;
+}
+
+div{
+
+    color: map-get($colors, fontColor);
+ 
+    table{
+         text-align: center;
+         border-spacing: 0;
+         border-collapse: separate;  
+        width: 100%;
+        table-layout: fixed;
+        
+        .lanthanoids td{ background-color: map-get($colors, lanthanoids);} 
+        .actinoids td{ background-color:  map-get($colors, actinoids);} 
+        .fifth td:nth-child(n+4),
+        .sixth td:nth-child(n+4),
+        .seventh td:nth-child(n+4),
+        .eighth td:nth-child(n+4){
+            background-color: map-get($colors, transitionMetal);
+        }
+
+        .eighth td:nth-child(n+13){background: map-get($colors, undefinedGroup);}
+
+        .third td:nth-child(n+5){background: map-get($colors, otherNonmetals);}
+
+
+       
+        tr{
+            td{
+                font-size: 1.4em;
+                padding: .6em;
+                font-family: $elementsFont;
+                border: $myBorder;
+                box-shadow: 0px 0px 4px 1px rgb(176, 159, 159);
+                
+                    sub{
+                    padding-right:2px;
+                    font-size: xx-small;
+                    background-color: inherit;
+                    vertical-align: baseline;
+                    position: relative;
+                    top: .2em;
+                        } 
+                }//td
+                
+                .special-label{font-size: 1.1em; background-color: black; border: none; font-family: $myFont; box-shadow: none; }
+          
+                .column-1{ background-color: map-get($colors, otherNonmetals) } 
+                     .column-1-1{ background-color: map-get($colors, alkalai);}  
+                .column-2{ background-color: map-get($colors, alkalineEarth);}   
+                .column-3{ background-color: map-get($colors, transitionMetal);;}   
+               
+                .column-13, .column-14-1, .column-15-1, .column-16-1{background-color:  map-get($colors, metalloids)!important;} 
+                    .column-13-1, .column-14-2, .column-15-2{background-color:  map-get($colors, postTransitionMetals) !important;} 
+                .column-15, .column-16{background: map-get($colors, otherNonmetals)!important;}
+                .column-17{background: map-get($colors, flourineGroup)!important;}
+                .column-18{background: map-get($colors, nobleGases)!important;}
+
+                .no-border{border: none; box-shadow: none;}
+                .periodic-table-label{border:none; color:map-get($colors, periodicTable);}
+                .last{background: map-get($colors, bg) !important;}
+        }//tr
+              
+                
+        
+       
+    }//table
+   
+}//div

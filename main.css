@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+div {
+  color: white;
+}
+
+div table {
+  text-align: center;
+  border-spacing: 0;
+  border-collapse: separate;
+  width: 100%;
+  table-layout: fixed;
+}
+
+div table .lanthanoids td {
+  background-color: #00466B;
+}
+
+div table .actinoids td {
+  background-color: #742574;
+}
+
+div table .fifth td:nth-child(n+4),
+div table .sixth td:nth-child(n+4),
+div table .seventh td:nth-child(n+4),
+div table .eighth td:nth-child(n+4) {
+  background-color: #FF4D4D;
+}
+
+div table .eighth td:nth-child(n+13) {
+  background: #96A5A7;
+}
+
+div table .third td:nth-child(n+5) {
+  background: #00CCFF;
+}
+
+div table tr td {
+  font-size: 1.4em;
+  padding: .6em;
+  font-family: "Kanit", sans-serif;
+  border: 2px solid #D1C7C7;
+  -webkit-box-shadow: 0px 0px 4px 1px #b09f9f;
+          box-shadow: 0px 0px 4px 1px #b09f9f;
+}
+
+div table tr td sub {
+  padding-right: 2px;
+  font-size: xx-small;
+  background-color: inherit;
+  vertical-align: baseline;
+  position: relative;
+  top: .2em;
+}
+
+div table tr .special-label {
+  font-size: 1.1em;
+  background-color: black;
+  border: none;
+  font-family: "Times New Roman", sans-serif;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div table tr .column-1 {
+  background-color: #00CCFF;
+}
+
+div table tr .column-1-1 {
+  background-color: #0066CC;
+}
+
+div table tr .column-2 {
+  background-color: #CC66CC;
+}
+
+div table tr .column-3 {
+  background-color: #FF4D4D;
+}
+
+div table tr .column-13, div table tr .column-14-1, div table tr .column-15-1, div table tr .column-16-1 {
+  background-color: #FFB84D !important;
+}
+
+div table tr .column-13-1, div table tr .column-14-2, div table tr .column-15-2 {
+  background-color: #FF704D !important;
+}
+
+div table tr .column-15, div table tr .column-16 {
+  background: #00CCFF !important;
+}
+
+div table tr .column-17 {
+  background: #70DB70 !important;
+}
+
+div table tr .column-18 {
+  background: #009999 !important;
+}
+
+div table tr .no-border {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div table tr .periodic-table-label {
+  border: none;
+  color: #B5CD6D;
+}
+
+div table tr .last {
+  background: black !important;
+}
+/*# sourceMappingURL=main.css.map */
