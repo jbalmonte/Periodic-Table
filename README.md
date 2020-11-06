@@ -1,2 +1,2 @@
 # Periodic-Table
-Periodic Table using HTML Table using SASS Framework
+Periodic Table using HTML Table in SASS Framework
